@@ -3,19 +3,12 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to sample-proj's documentation!
+Welcome to sample-proj's subsubdir!
 =======================================
 
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
 
-.. redirect-from:: /old-index
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. redirect-from:: /subdir/subsubdir/old-subsubdir-index
+.. redirect-from:: /subdir/subsubdir2/old-subsubdir2-index
