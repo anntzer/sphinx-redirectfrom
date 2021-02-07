@@ -49,7 +49,7 @@ def _generate_redirects(app, exception):
         return
     for k, v in RedirectFrom.redirects.items():
         p = Path(app.outdir, k + builder.out_suffix)
-        Path(*p.parts[:-1]).mkdir(parents=True, exist_ok=True)
-        with p.open("w") as file:
+        p.parent.mkdir(parents=True, exist_ok=True)
+        with p.open("x") as file:
             logger.info('making refresh html file: ' + k + ' redirect to ' + v)
             file.write(HTML_TEMPLATE.format(v=v))
